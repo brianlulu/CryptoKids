@@ -1,0 +1,325 @@
+{
+	"id": "98ed4db7eaab1b508b584b2da88b9c7d",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/CryptoKids.sol": {
+				"content": "// SPDX-License-Identifier: Unlicensed\n\npragma solidity ^0.8.7; // specify complier's version or features or che\n\ncontract CryptoKids {\n\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/CryptoKids.sol": {
+				"CryptoKids": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/CryptoKids.sol\":114:138  contract CryptoKids {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/CryptoKids.sol\":114:138  contract CryptoKids {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220c71faa8814e3d8350247ff4b1808d0802a52df27db0ce988e9f9a5f8fbb0c22b64736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220c71faa8814e3d8350247ff4b1808d0802a52df27db0ce988e9f9a5f8fbb0c22b64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC7 0x1F 0xAA DUP9 EQ 0xE3 0xD8 CALLDATALOAD MUL SELFBALANCE SELFDESTRUCT 0x4B XOR ADDMOD 0xD0 DUP1 0x2A MSTORE 0xDF 0x27 0xDB 0xC 0xE9 DUP9 0xE9 0xF9 0xA5 0xF8 0xFB 0xB0 0xC2 0x2B PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "114:24:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220c71faa8814e3d8350247ff4b1808d0802a52df27db0ce988e9f9a5f8fbb0c22b64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC7 0x1F 0xAA DUP9 EQ 0xE3 0xD8 CALLDATALOAD MUL SELFBALANCE SELFDESTRUCT 0x4B XOR ADDMOD 0xD0 DUP1 0x2A MSTORE 0xDF 0x27 0xDB 0xC 0xE9 DUP9 0xE9 0xF9 0xA5 0xF8 0xFB 0xB0 0xC2 0x2B PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "114:24:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 114,
+									"end": 138,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220c71faa8814e3d8350247ff4b1808d0802a52df27db0ce988e9f9a5f8fbb0c22b64736f6c63430008070033",
+									".code": [
+										{
+											"begin": 114,
+											"end": 138,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 114,
+											"end": 138,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 114,
+											"end": 138,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 114,
+											"end": 138,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 114,
+											"end": 138,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 114,
+											"end": 138,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/CryptoKids.sol\":\"CryptoKids\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/CryptoKids.sol\":{\"keccak256\":\"0x068830f2f8b3ad7f0feedd034df9f9b2db588e3c1a5737194f87ca80767e3755\",\"license\":\"Unlicensed\",\"urls\":[\"bzz-raw://a45c7066e0647ebc10e7adfed1b5f4cc7324ef4b189f2944a4ca74095863ec79\",\"dweb:/ipfs/QmRVXxJj5Z7oDoZWz1a4fFst587HvJsz1PBrFQSrhKy9Z6\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/CryptoKids.sol": {
+				"ast": {
+					"absolutePath": "contracts/CryptoKids.sol",
+					"exportedSymbols": {
+						"CryptoKids": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "Unlicensed",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "40:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "CryptoKids",
+							"nameLocation": "123:10:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "114:24:0",
+							"usedErrors": []
+						}
+					],
+					"src": "40:98:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
