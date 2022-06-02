@@ -21,13 +21,20 @@ contract CryptoKids {
 
     Kid[] public kids;
 
+    // It is similar to the decorator in Python where you apply the function
+    // difference is that the decorator applys to output???
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only The Owner Can Use The Function!");
+        _; // This means the rest of the functions
+    }
+
     function addKid(
         address payable walletAddress, 
         string memory firstName, 
         string memory lastName, 
         uint releaseTime, 
         uint amount, 
-        bool canWithdraw) public {
+        bool canWithdraw) public onlyOwner{
             kids.push(Kid(
                 walletAddress,
                 firstName,
@@ -62,6 +69,7 @@ contract CryptoKids {
     function avaiableToWithdraw(address walletAddress) public returns(bool) {
         uint i = getKidIndex(walletAddress);
 
+        require(block.timestamp > kids[i].releaseTime, "The Withdraw Time Has Not Passed Yet!");
         // block.timestamp check the current time, but this can be 15 mins difference 
         // accurate timing should use other variable
         if (block.timestamp > kids[i].releaseTime) {
