@@ -11,6 +11,31 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "kidAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amountDeposited",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "contractBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "LogKidFundingReceived",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address payable",
@@ -184,11 +209,11 @@
 	},
 	"sources": {
 		"contracts/CryptoKids.sol": {
-			"keccak256": "0xbf4a80d30d5858868cd8d815e5b448900ba8e7cf7cb3e6674797967a2aa69aef",
+			"keccak256": "0x70536df66acaaa96f99ba8fdee82409fa1751c8680b5f5e903abce1aa191e387",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://be4bddc806571fa0098da9b2e0f56ab287346cf421012592361e4fbc4ffd255c",
-				"dweb:/ipfs/QmV57z5twrmynVgvThSbWAMHhEYNSAUU5odSjRcAFaRwWC"
+				"bzz-raw://4af3916ee1b799b1d9b08046e437fadfccd34a447121869149c6ab0bc916b0bd",
+				"dweb:/ipfs/QmTrvQsTbhY5XnEMQUukc98uF9LtRr1o3oe1gNswsyNYhx"
 			]
 		}
 	},

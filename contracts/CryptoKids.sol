@@ -6,6 +6,9 @@ contract CryptoKids {
     
     address owner;
 
+    // by convention people put Log in front.
+    event LogKidFundingReceived(address kidAddress, uint amountDeposited, uint contractBalance);
+
     constructor() {
         owner = msg.sender;
     }
@@ -49,7 +52,6 @@ contract CryptoKids {
         addToKidsBalance(walletAddress);
     }  
 
-    //TODO: check if it work
     function getKidIndex(address walletAddress) private view returns(uint) {
         for( uint i = 0; i < kids.length; i++) {
             if ( kids[i].walletAddress == walletAddress) {
@@ -63,6 +65,7 @@ contract CryptoKids {
         uint theKidIndex = getKidIndex(walletAddress);
         if (theKidIndex < kids.length) {
             kids[theKidIndex].amount += msg.value;
+            emit LogKidFundingReceived(walletAddress, msg.value, balanceOf());
         }
     }
 
